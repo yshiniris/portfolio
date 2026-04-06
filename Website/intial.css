@@ -15,7 +15,7 @@ html{
 }
 
 body{
-  background-color:  #CE93D8;
+  background-color:  #ffffff;
     color: #141212;
 
 }
@@ -70,7 +70,7 @@ span{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #7B1FA2;
+    background-color: #000000;
     padding: 15px 50px; 
     z-index: 1000;
 }
@@ -93,8 +93,8 @@ span{
 
 /* Hover effect */
 .nav-links a:hover {
-    background-color: #7B1FA2;
-    color: #CE93D8;
+    background-color: #545454;
+    color: #666666;
 }
 
 /* Navigation Bar */
@@ -134,7 +134,7 @@ span{
 .hero-title {
   font-size: 4rem;
   font-weight: 700;
-  color: #4A148C;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
@@ -145,9 +145,6 @@ span{
 }
 
 
-.hero-btn:hover {
-  background-color: #7B1FA2;
-}
 
 .social-icons {
   display: flex;
@@ -171,7 +168,7 @@ span{
     font-size: 40px;         
     font-weight: 700;         
     text-align: center;       
-    color: #4A148C;          
+    color: #000000;          
     margin: 60px 0 40px;      
     letter-spacing: 2px;     
     text-transform: uppercase;
@@ -218,7 +215,7 @@ span{
   font-size: 40px;          
   font-weight: 700;        
   text-align: center;       
-  color: #4A148C;          
+  color: #000000;          
   margin: 60px 0 40px;      
   letter-spacing: 2px;     
   text-transform: uppercase;
@@ -282,7 +279,7 @@ span{
   font-size: 40px;         
   font-weight: 700;        
   text-align: center;      
-  color: #4A148C;          
+  color: #000000;          
   margin: 60px 0 40px;     
   letter-spacing: 2px;      
   text-transform: uppercase;
@@ -310,7 +307,7 @@ height: 80px;
    font-size: 40px;         
   font-weight: 700;         
   text-align: center;       
-  color: #4A148C;          
+  color: #000000;          
   margin: 60px 0 40px;      
   letter-spacing: 2px;      
   text-transform: uppercase;
