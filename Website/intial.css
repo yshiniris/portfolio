@@ -144,18 +144,6 @@ span{
   margin-bottom: 2rem;
 }
 
-
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-}
-
 /* Home */
 
 /*About Me*/
@@ -312,3 +300,22 @@ height: 80px;
   letter-spacing: 2px;      
   text-transform: uppercase;
  }
+
+ .contact-info {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* aligns icon and text vertically */
+  gap: 15px;                 /* space between icon and text */
+  margin-top: 20px;
+}
+
+.email-icon {
+  width: 60px;
+  height: 60px;
+}
+
+#email-link {
+  font-size: 30px;
+  color: #000000;            /* purple text */
+  font-weight: 600;
+}
