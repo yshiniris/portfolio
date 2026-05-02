@@ -110,3 +110,35 @@ header {
  background-color: #545454;
     color: #666666;
 }
+
+.header {
+  margin-top: 10%;
+  text-align: center;   
+  font-size: 40px;
+
+}
+
+ /* Tech Stack Icons */
+
+.card {
+  width: 150px;
+  height: 150px;
+  padding: 16px;
+  background-color: #ffffff;    
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  overflow: hidden;         
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img-icons {
+  max-width: 100%;   
+  max-height: 100%;   
+  object-fit: contain;  
+}
