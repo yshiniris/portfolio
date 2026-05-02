@@ -1,4 +1,4 @@
-/* Reset default browser spacing */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
 html{ 
     font-size: 60%;
     overflow-x: hidden;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 100%;
 }
 html, body {
       margin: 0;
@@ -24,10 +24,15 @@ html, body {
     }
 
     canvas {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;    
+  height: 100vh;  
+  z-index: -1;  
+  background: #000; 
+}
+
 
     .instruction {
       position: fixed;
@@ -55,7 +60,7 @@ header {
   padding: 1rem 5%;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: space-between; /* Logo left, nav center, button right */
+  justify-content: space-between; 
   align-items: center;
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -74,71 +79,42 @@ header {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 20%;
   font-weight: bold;
-  color: #00FF00;       /* Forces the logo text to white */
+  color: #00FF00;      
   text-decoration: none;
 }
-
-.navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #000000;
-    padding: 15px 50px; 
-    z-index: 1000;
-}
-
-.nav-links {
-    display: flex; /* Keeps the list items horizontal */
-    list-style: none;
-    font-size: 20px;
-}
-
-.nav-links li {
-    margin-left: 30px; 
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-/* Hover effect */
-.nav-links a:hover {
-    background-color: #545454;
-    color: #666666;
-}
-
-/* Navigation Bar */
 
 /* Home */
 
 .main-content {
-    margin-top: 30px; 
-    padding: 20px;
+    margin-top: 30%; 
+    padding: 20%;
 }
 .hero {
   display: flex;
-  flex-direction: column;   /* stack items vertically */
-  justify-content: flex-start; /* push content upward */
+  flex-direction: column;  
+  justify-content: flex-start; 
   align-items: center;
-  min-height: 85vh;        /* full screen height */
+  min-height: 85vh;        
   text-align: center;
-  padding-top: 80px;  
+  padding-top: 10%;  
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .hero-photo {
-  width: 200px;          /* adjust size */
-  height: 200px;
-  object-fit: cover;     /* crop nicely */
-  border-radius: 50%;    /* makes it round */
-  border: 3px solid #fff; /* optional border */
-  margin-bottom: 10px;   /* spacing above the text */
+  width: 40%;          
+  height: 40%;
+  object-fit: cover;    
+  border-radius: 50%;   
+  border: 3% solid #fff; 
+  margin-bottom: 10px;  
 }
 
 .hero-title {
@@ -147,15 +123,81 @@ header {
 }
 
 .hero-subtitle {
-  font-size: 35 px;
+  font-size: 35px;
   margin: 10px 0;
-  
 }
 
 .hero-description {
   font-size: 20px;
   color: #cccccc;
 }
+
+ /* BUTTONS */
+ /* From Uiverse.io by Spacious74 */ 
+button {
+  font-size: 1em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #000000b4;
+}
+
+.container {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  border-radius: 0.9em;
+  transition: all 0.4s ease;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+
+.container:hover::before {
+  background: linear-gradient(90deg, #03f417, #2d9c4e);
+  filter: blur(1.2em);
+}
+.container:active::before {
+  filter: blur(0.2em);
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: block;
+  font-size: 1.4em;
+  padding: 0.8em 1.4em;
+  border-radius: 0.5em;
+  background: linear-gradient(90deg, #138d25, #41f47a);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 2px 2px 3px #000000b4;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+
 
 /* Home */
 
