@@ -105,8 +105,17 @@ header {
     font-weight: 500;
 }
 
-
 .nav-links a:hover {
  background-color: #545454;
     color: #666666;
+}
+
+.contact-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 15%;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
 }
