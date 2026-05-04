@@ -111,14 +111,26 @@ header {
     color: #666666;
 }
 
-.header {
-  margin-top: 10%;
-  text-align: center;   
-  font-size: 40px;
-
-}
+.techstack-title{
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  user-select: none;
+  pointer-events: none;
+  text-align: center;
+  margin-top: 10%;}
 
  /* Tech Stack Icons */
+
+ .techstack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 40px; 
+  margin-top:   10%;
+
+ }
 
 .card {
   width: 150px;

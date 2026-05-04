@@ -112,12 +112,16 @@ header {
     color: #666666;
 }
 
-.header{
+.About-Me-Title{
   position:fixed;
-  margin-top: 10%;
+  margin-top: 15%;
   padding-left: 40%;
   font-size: 40px;
-}
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-align: center;
+} 
 
 /* About Section */
 
@@ -127,7 +131,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   max-width: 1200px;
-  margin: 10% 50%;
+  margin: 10% 10%;
   position: absolute;
   top: 100%;
   left: 40%;
