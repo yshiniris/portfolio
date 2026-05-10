@@ -58,6 +58,48 @@ html, body {
   text-decoration: none;
 }
 
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background-color: #545454;
+  color: #666666;
+}
+
+.links-container {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+
 
 .navbar {
     display: flex;

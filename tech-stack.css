@@ -112,6 +112,9 @@ header {
     color: #666666;
 }
 
+.semi-colon {
+  font-weight: bold;
+}
 /* Hamburger Button */
 .hamburger {
   display: none;
