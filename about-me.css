@@ -71,9 +71,10 @@ header {
 }
 
 .logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
+ font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;   
+  letter-spacing: 5px;   
   text-decoration: none;
 }
 
