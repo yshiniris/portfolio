@@ -18,8 +18,8 @@ html, body {
   padding: 0;
   background: #000;
   color: #ffffff;
-  overflow: hidden;
-  height: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -60,6 +60,7 @@ header {
   display: flex;
   justify-content: space-between; 
   align-items: center;
+  position: static;
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
@@ -111,6 +112,76 @@ header {
     color: #666666;
 }
 
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile and Tablet Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .links-container {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    flex-direction: column;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+  }
+
+  .links-container.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+}
+
 /* Home */
 
 .main-content {
@@ -121,22 +192,33 @@ header {
 /* Home */
 
 .header {
-  position:fixed;
-  margin-top: 10%;
-  padding-left: 45%;
+   text-align: center;
   font-size: 40px;
+  padding: 100px 0 20px;
+  position: static;
+  margin: 0;
+  padding-left: 0;
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 5% auto 0;
+  padding: 0 40px 40px;
+}
+
 
 
 /* Certificates Card */
 /* From Uiverse.io by alexmaracinaru */ 
 
+ 
+
 .card {
-  width: 30%;
   background: white;
   padding: 1rem;
-  border-radius: 6px;
-  margin: 17% 12%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
   transition: transform 0.2s ease;
 }
