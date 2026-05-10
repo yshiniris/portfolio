@@ -127,7 +127,7 @@ button {
   text-decoration: none;
   border-radius: 25px;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
-  width: 200px; /* keeps buttons uniform */
+  width: 200px;
   text-align: center;
 }
 
