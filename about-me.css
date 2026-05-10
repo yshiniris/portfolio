@@ -91,20 +91,21 @@
   }
 
   /* Hamburger Button */
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 6px;
-  }
+  
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
 
-  .hamburger span {
-    width: 28px;
-    height: 3px;
-    background-color: white;
-    border-radius: 3px;
-    transition: 0.3s ease-in-out;
-  }
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
 
   .About-Me-Title{
    text-align: center;
