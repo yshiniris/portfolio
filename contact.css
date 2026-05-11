@@ -138,3 +138,35 @@ header {
   font-weight: 300;
 }
 
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 5px; 
+  margin-top:   10%;
+
+}
+
+.icons{
+  width: 150px;
+  min-height: 180px;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.contact-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.contact-container img:hover {
+  transform: scale(1.1);
+}
