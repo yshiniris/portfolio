@@ -148,7 +148,7 @@ body {
   display: inline-block;
   margin: 10px 0 6px;
   padding: 8px 18px;
-  background: #055713;
+  background: #204795;
   color: white;
   border-radius: 20px;
   text-decoration: none;
@@ -156,7 +156,7 @@ body {
 }
 
 .cert-link:hover {
-  background: #4adf88;
+  background: #4871c4;
 }
 
 .modal {
