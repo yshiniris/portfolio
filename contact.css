@@ -160,6 +160,21 @@ header {
   transition: transform 0.3s ease;
   overflow: hidden;
 }
+.icons:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #204795;
+}
+
+.icons i {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.icons span {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 
 .contact-container img {
   max-width: 100%;
