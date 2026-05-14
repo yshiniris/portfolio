@@ -1,5 +1,11 @@
+const cards = document.querySelectorAll('.card');
+const modal = document.getElementById('certModal');
+const modalImage = document.getElementById('modalImage');
+const modalClose = document.getElementById('modalClose');
 
-    // Hamburger Menu Toggle
+   
+   
+   // Hamburger Menu Toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
 
@@ -19,37 +25,22 @@
     }
 
 // Certifications
-// Get modal elements
-const modal = document.getElementById("certModal");
-const modalImage = document.getElementById("modalImage");
-const modalTitle = document.getElementById("modalTitle");
-const modalDescription = document.getElementById("modalDescription");
-const modalLink = document.getElementById("modalLink");
-const closeBtn = document.getElementById("modalClose");
-
-// Get all cards
-const cards = document.querySelectorAll(".card");
-
-// When an image is clicked, open modal
-cards.forEach(card => {
-  const img = card.querySelector("img");
-  img.addEventListener("click", () => {
-    modal.style.display = "block"; // show modal
-    modalImage.src = img.src;
-    modalTitle.textContent = card.dataset.title;
-    modalDescription.textContent = card.dataset.desc;
-    modalLink.href = card.dataset.link;
+  cards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.classList.contains('cert-link')) return;
+      const img = card.querySelector('img');
+      modalImage.src = img.src;
+      modalImage.alt = img.alt;
+      modal.classList.add('active');
+    });
   });
-});
 
-// Close modal when X is clicked
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
 
-// Close modal when clicking outside content
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
