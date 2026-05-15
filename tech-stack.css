@@ -131,7 +131,7 @@ header {
 .hamburger span {
   width: 28px;
   height: 3px;
-  background-color: #1a1f2e;
+  background-color: white;
   border-radius: 3px;
   transition: 0.3s ease-in-out;
 }
