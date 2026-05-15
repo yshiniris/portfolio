@@ -15,14 +15,14 @@ html {
   padding: 0;
   background: #000;
   color: #ffffff;
-  overflow-y: auto;
-  height: auto;
+  overflow: hidden;
+  height: 100%;
   font-family: 'Segoe UI', sans-serif;
 }
 
-body{
-  overflow-y: auto;
-  height: auto;
+body {
+  overflow: hidden;
+  height: 100%;
 }
 
 canvas {
@@ -34,7 +34,6 @@ canvas {
   left: 0;
   z-index: -1;
 }
-
 
 .instruction {
   position: fixed;
@@ -51,8 +50,6 @@ canvas {
   z-index: 10;
 }
 
-/* Navigation Bar */
-
 header {
   position: fixed;
   top: 0;
@@ -60,35 +57,35 @@ header {
   padding: 1rem 5%;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
-
 
 .logo:hover {
   transform: scale(1.1);
 }
 
 .logo {
- font-size: 25px;
+  font-size: 25px;
   font-weight: 300;
-  color: #ffffff;   
-  letter-spacing: 5px;   
+   font-family: playfair display, serif;
+  color: #ffffff;
+  letter-spacing: 5px;
   text-decoration: none;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #000000;
-    padding: 15px 50px; 
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 15px 50px;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -102,22 +99,21 @@ header {
 }
 
 .nav-links a {
-
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
+  font-family: 'Source Serif 4', serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 
-
 .nav-links a:hover {
- background-color: #545454;
-    color: #666666;
+  background-color: #545454;
+  color: #666666;
 }
 
 .semi-colon {
   font-weight: bold;
 }
-/* Hamburger Button */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -135,6 +131,7 @@ header {
 
 .techstack-title {
   font-size: 3.5rem;
+  font-family: Playfair Display, serif;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -142,42 +139,22 @@ header {
   pointer-events: none;
   text-align: center;
   margin-top: 10%;
+  margin-bottom: 2%;
 }
 
-@media (max-width: 600px) {
-  .techstack-title {
-    margin-top: 25%;
-  }
-}
-
- /* Tech Stack Icons */
 .techstack-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
-  justify-content: center;
-  margin-top: 5%;
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .techstack-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .techstack-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .card {
   width: 100%;
-  aspect-ratio: 1;
+  min-height: 150px;
   padding: 16px;
   background-color: #1a1f2e;
   border-radius: 18px;
@@ -190,17 +167,22 @@ header {
   overflow: hidden;
 }
 
+.card:hover {
+  transform: scale(1.05);
+  background-color: #252b3d;
+}
+
 .card-text {
   margin: 0;
   color: #ffffff;
+  font-family: 'Raleway', serif;
   font-size: clamp(0.9rem, 2vw, 1.4rem);
   font-weight: 500;
   text-align: center;
 }
 
 .img-icons {
-  width: 55%;
-  height: 55%;
+  width: 70%;
+  height: auto;
   object-fit: contain;
 }
-

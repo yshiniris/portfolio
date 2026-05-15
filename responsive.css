@@ -1,30 +1,7 @@
-
-
-/*  Tablet Responsive */
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  html {
-    font-size: 55%;
-  }
-
+/*  Hamburger / Navbar */
+@media (max-width: 1024px) {
   .navbar {
     padding: 15px 30px;
-  }
-
-  .nav-links li {
-    margin-left: 15px;
-  }
-}
-
-/* mobile responsive */
-
-@media (max-width: 768px) {
-  html {
-    font-size: 45%;
-  }
-
-  .navbar {
-    padding: 15px 20px;
   }
 
   .hamburger {
@@ -33,88 +10,279 @@
 
   .links-container {
     display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: #000000;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.98) 100%);
-    flex-direction: column;
-    padding: 20px 0;
-    border-top: 1px solid #333;
-    z-index: 999;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
-    max-height: 80vh;
-    overflow-y: auto;
   }
 
   .links-container.active {
     display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 20px;
+    z-index: 999;
   }
 
   .nav-links {
     flex-direction: column;
-    width: 100%;
-    font-size: 16px;
   }
 
   .nav-links li {
+    margin: 10px 0;
     margin-left: 0;
-    padding: 15px 20px;
-    border-bottom: 1px solid #333;
-  }
-
-  .nav-links a {
-    font-size: 16px;
-  }
-
-  .About-Me-Title {
-    margin-top: 120px;
-    font-size: 28px;
-    padding: 0 20px;
-  }
-
-  .about-section {
-    flex-direction: column;
-    gap: 30px;
-    width: 90%;
-    margin: 120px auto 40px;
-  }
-
-  .about-image {
-    text-align: center;
-  }
-
-  .about-description {
-    padding-left: 0;
-  }
-
-  .about-description p {
-    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 768px) {
-  main.card-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    padding: 0 16px !important;
-    margin: 20px auto !important;
+  .navbar {
+    padding: 15px 20px;
+  }
+}
+
+/*  Home  */
+@media (max-width: 768px) {
+  html, body {
+    overflow-y: auto;
+    height: auto;
+  }
+
+  .hero {
+    padding-top: 20%;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .hero-photo {
+    width: 60%;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 180px;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .button-container {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero {
+    padding-top: 15%;
+  }
+
+  .hero-photo {
+    width: 50%;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
+
+  .btn {
+    width: 200px;
+    font-size: 1.6rem;
+  }
+}
+
+/* About Me */
+@media (max-width: 768px) {
+  .About-Me-Title {
+    font-size: 26px;
+    padding: 80px 20px 10px;
+    letter-spacing: 2px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    gap: 15px;
+    width: 92%;
+    margin: 10px auto 40px;
+    padding: 0;
+  }
+
+  .about-image {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .About-Me-Title {
+    font-size: 32px;
+    padding: 80px 20px 15px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+    margin: 15px auto 50px;
+    padding: 0;
+  }
+
+  .about-image {
+    flex: 0 0 auto;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+/* Certifications */
+@media (max-width: 768px) {
+  .header {
+    font-size: 28px;
+    padding: 80px 20px 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+    margin: 20px auto;
   }
 }
 
 @media (max-width: 480px) {
-  main.card-grid {
-    grid-template-columns: repeat(1, 1fr) !important;
+  .header {
+    font-size: 22px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (min-width: 769px) {
-  main.card-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 24px !important;
-    max-width: 1100px !important;
-    margin: 40px auto !important;
-    padding: 0 24px !important;
+/* Tech Stack  */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .techstack-title {
+    margin-top: 15%;
+    font-size: 2.8rem;
+  }
+
+  .techstack-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 600px;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .techstack-title {
+    margin-top: 20%;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .techstack-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    padding: 0 16px;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .techstack-title {
+    margin-top: 25%;
+    font-size: 1.8rem;
+  }
+
+  .techstack-container {
+    padding: 0 12px;
+    gap: 12px;
+  }
+}
+
+/* Contact */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+    margin-top: 25%;
+    letter-spacing: 2px;
+    padding: 0 20px;
+  }
+
+  .contact-container {
+    margin-top: 12%;
+    gap: 12px;
+  }
+
+  .contact-card {
+    width: 120px;
+    min-height: 120px;
+  }
+
+  a.icons {
+    min-height: 120px;
+    gap: 10px;
+  }
+
+  .icons i {
+    font-size: 40px;
+  }
+
+  .icons span {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .contact-title {
+    font-size: 2.8rem;
+    margin-top: 18%;
+  }
+
+  .contact-container {
+    margin-top: 8%;
+    gap: 14px;
+  }
+
+  .contact-card {
+    width: 135px;
+    min-height: 135px;
+  }
+
+  a.icons {
+    min-height: 135px;
+  }
+
+  .icons i {
+    font-size: 48px;
   }
 }
