@@ -70,7 +70,7 @@ header {
 .logo {
   font-size: 25px;
   font-weight: 300;
-  font-family: playfair display, serif;
+  font-family: 'Playfair Display', serif;
   color: #ffffff;
   letter-spacing: 5px;
   text-decoration: none;
@@ -99,10 +99,17 @@ header {
 }
 
 .nav-links a {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
   text-decoration: none;
   color: white;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -131,7 +138,7 @@ header {
 
 .techstack-title {
   font-size: 3.5rem;
-  font-family: Playfair Display, serif;
+  font-family: 'Playfair Display', serif;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 4px;

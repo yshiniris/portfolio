@@ -6,14 +6,10 @@
   scroll-behavior: smooth;
   font-family: 'Segoe UI', sans-serif;
 }
-
 html {
   font-size: 60%;
   overflow-x: hidden;
   scroll-padding-top: 100px;
-}
-
-html, body {
   margin: 0;
   padding: 0;
   background: #000;
@@ -21,6 +17,11 @@ html, body {
   overflow: hidden;
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
 }
 
 canvas {
@@ -32,7 +33,6 @@ canvas {
   left: 0;
   z-index: -1;
 }
-
 
 .instruction {
   position: fixed;
@@ -49,52 +49,43 @@ canvas {
   z-index: 10;
 }
 
-/* Navigation Bar */
-
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1rem 5%;
-  background: rgba(0, 0, 0, 0.3);
+.logo-container {
   display: flex;
-  justify-content: space-between; 
   align-items: center;
-  backdrop-filter: blur(10px);
-  z-index: 1000;
 }
-
 
 .logo:hover {
   transform: scale(1.1);
 }
 
 .logo {
- font-size: 25px;
+  font-size: 25px;
   font-weight: 300;
-   font-family: playfair display, serif;
+  font-family: 'Playfair Display', serif;
   color: #ffffff;
   letter-spacing: 5px;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
-  
+
 .navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #000000;
-    padding: 15px 50px; 
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 15px 50px;
+  z-index: 1000;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -102,18 +93,24 @@ header {
 }
 
 .nav-links a {
-    font-family: 'Source Serif 4', serif;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
- background-color: #545454;
-    color: #666666;
+  background-color: #545454;
+  color: #666666;
 }
 
-/* Hamburger Button */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -129,10 +126,13 @@ header {
   transition: 0.3s ease-in-out;
 }
 
+.links-container {
+  display: block;
+}
 
 .contact-title {
   font-size: 3.5rem;
-  font-family: Playfair Display, serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin-top: 15%;
   color: #ffffff;
@@ -140,12 +140,13 @@ header {
   letter-spacing: 4px;
   font-weight: 300;
 }
+
 .contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .contact-card {
