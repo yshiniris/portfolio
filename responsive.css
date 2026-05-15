@@ -41,7 +41,7 @@
 }
 
 /*  Home  */
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 768px) {
   html, body {
     overflow-y: auto;
     height: auto;
@@ -106,7 +106,7 @@
 }
 
 /* About Me */
-@media  (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 768px) {
   .About-Me-Title {
     font-size: 26px;
     padding: 80px 20px 10px;
@@ -165,7 +165,7 @@
 }
 
 /* Certifications */
-@media  (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 768px) {
   .header {
     font-size: 28px;
     padding: 80px 20px 10px;
