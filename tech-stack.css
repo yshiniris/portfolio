@@ -90,8 +90,11 @@ header {
 
 .nav-links {
   display: flex;
+  font-family: 'Playfair Display', serif;
   list-style: none;
   font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -99,9 +102,8 @@ header {
 }
 
 .nav-links a {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
   text-decoration: none;
+  font-family: 'Playfair Display', serif;
   color: white;
   font-weight: 500;
   display: flex;
@@ -113,8 +115,8 @@ header {
 }
 
 .nav-links a:hover {
-  background-color: #1a1f2e;
-  color: WHITE;
+  background-color: #545454;
+  color: #666666;
 }
 
 .semi-colon {
@@ -136,17 +138,16 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-.techstack-title {
+.page-title {
   font-size: 3.5rem;
   font-family: 'Playfair Display', serif;
   color: #ffffff;
-  text-transform: uppercase;
   letter-spacing: 4px;
-  user-select: none;
-  pointer-events: none;
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 2%;
+  padding: 80px 0 30px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .techstack-container {

@@ -82,6 +82,7 @@ canvas {
 
 .nav-links {
   display: flex;
+  font-family: 'Playfair Display', serif;
   list-style: none;
   font-size: 20px;
   margin: 0;
@@ -93,9 +94,8 @@ canvas {
 }
 
 .nav-links a {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
   text-decoration: none;
+  font-family: 'Playfair Display', serif;
   color: white;
   font-weight: 500;
   display: flex;
@@ -107,7 +107,7 @@ canvas {
 }
 
 .nav-links a:hover {
-background-color: #1a1f2e;
+  background-color: #545454;
   color: #666666;
 }
 
@@ -130,15 +130,16 @@ background-color: #1a1f2e;
   display: block;
 }
 
-.contact-title {
+.page-title {
   font-size: 3.5rem;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  margin-top: 15%;
   color: #ffffff;
-  text-transform: uppercase;
   letter-spacing: 4px;
-  font-weight: 300;
+  padding: 80px 0 30px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-container {

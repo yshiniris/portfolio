@@ -55,6 +55,7 @@ body {
 
 .nav-links {
   display: flex;
+  font-family: 'Playfair Display', serif;
   list-style: none;
   font-size: 20px;
   margin: 0;
@@ -66,10 +67,9 @@ body {
 }
 
 .nav-links a {
-   font-family: 'Playfair Display', serif;
-  font-size: 20px;
   text-decoration: none;
   color: white;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@ body {
 }
 
 .nav-links a:hover {
-background-color: #1a1f2e;
+  background-color: #545454;
   color: #666666;
 }
 
@@ -103,13 +103,16 @@ background-color: #1a1f2e;
   display: block;
 }
 
-.header {
+.page-title {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  padding: 100px 0 20px;
+  font-size: 3.5rem;
+  padding: 80px 0 30px;
   margin: 0;
   color: #fff;
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 1;
 }
 
 .card-grid {
