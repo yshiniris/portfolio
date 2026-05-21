@@ -111,6 +111,7 @@
     font-size: 2.2rem;
     padding: 80px 20px 10px;
     letter-spacing: 2px;
+    margin-bottom: 2rem;
   }
 
   .about-section {
@@ -139,6 +140,7 @@
   .page-title {
     font-size: 2.67rem;
     padding: 80px 20px 15px;
+    margin-bottom: 2.5rem;
   }
 
   .about-section {
@@ -169,6 +171,7 @@
   .page-title {
     font-size: 1.87rem;
     padding: 80px 20px 10px;
+    margin-bottom: 2rem;
   }
 
   .card-grid {
@@ -193,6 +196,7 @@
   .page-title {
     margin-top: 15%;
     font-size: 2.8rem;
+    margin-bottom: 2.5rem;
   }
 
   .techstack-container {
@@ -207,6 +211,7 @@
     margin-top: 20%;
     font-size: 2.2rem;
     letter-spacing: 2px;
+    margin-bottom: 2rem;
   }
 
   .techstack-container {
@@ -236,6 +241,7 @@
     margin-top: 25%;
     letter-spacing: 2px;
     padding: 0 20px;
+    margin-bottom: 2rem;
   }
 
   .contact-container {
@@ -266,6 +272,7 @@
   .page-title {
     font-size: 2.8rem;
     margin-top: 18%;
+    margin-bottom: 2.5rem;
   }
 
   .contact-container {
